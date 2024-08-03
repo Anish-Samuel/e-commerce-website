@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .dropdown-toggle::after { 
+            content: none; 
+        } 
+        #bg{
+            background-color: white !important;
+            box-shadow: 0px 0px 15px -5px grey;
+        }
+        #icon{
+            list-style-type: none;
+            display: -webkit-inline-flex;
+            font-size: 10px;
+            text-align: center;
+            margin: 10px;
+        }
+        #sp{
+            margin: 5px;
+            text-align: center;
+        }
+        #bg2{
+          text-align: center;
+        }
+        #sp2{
+          margin: 10px;
+          display: -webkit-inline-flex;
+          text-align: center;
+          border: 2px rgb(255, 236, 238) solid !important;
+          border-radius: 10px;
+        }
+        #sp2:hover{
+          border: 2px solid pink !important;
+          transform: scale(1.0125,1.0125);
+          transition-delay: 100ms;
+          box-shadow: 0px 0px 30px -2px pink;
+        }
+        h6{
+          margin: 10px;
+        }
+        #myimg{
+          width: auto;
+          height: auto;
+          border-radius: 15px;
+        }
+        #myimg2{
+          width: 100%;
+          height: 250px;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+        }
+        #ft{
+          li{
+            font-size: 12px;
+          }
+          ul{
+            list-style-type: none;
+          }
+          padding-left: 10%;
+          padding-right: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="bg">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="image3.jpeg" alt="" width="50px" height="50px"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <h6>MEN</h6>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Shirt</a></li>
+                          <li><a class="dropdown-item" href="#">Pant</a></li>
+                          <li><a class="dropdown-item" href="#">T-Shirt</a></li>
+                          <li><a class="dropdown-item" href="#">Trousers</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <h6>WOMEN</h6>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Saree</a></li>
+                          <li><a class="dropdown-item" href="#">Chudi</a></li>
+                          <li><a class="dropdown-item" href="#">Salwar</a></li>
+                          <li><a class="dropdown-item" href="#">Leggings</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <h6>KIDS</h6>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">T-Shirt</a></li>
+                          <li><a class="dropdown-item" href="#">Trousers</a></li>
+                          <li><a class="dropdown-item" href="#">Shoes</a></li>
+                          <li><a class="dropdown-item" href="#">Pagamas</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <h6>HOME & LIVING</h6>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Home Decor</a></li>
+                          <li><a class="dropdown-item" href="#">Lamp</a></li>
+                          <li><a class="dropdown-item" href="#">Cushions</a></li>
+                          <li><a class="dropdown-item" href="#">Curtains</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <h6>BEAUTY</h6>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Makeup</a></li>
+                          <li><a class="dropdown-item" href="#">Haircare</a></li>
+                          <li><a class="dropdown-item" href="#">Skincare</a></li>
+                          <li><a class="dropdown-item" href="#">Fragrances</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                  <div>
+                    <ul id="icon">
+                        <li id="sp"><a href="#"><img src="profile1.png" alt="" width="20px" height="20px"></a><br>Profile</li>
+                        <li id="sp"><a href="#"><img src="wishlist1.png" alt="" width="20px" height="20px"></a><br>Wishlist</li>
+                        <li id="sp"><a href="#"><img src="bag1.png" alt="" width="20px" height="20px"></a><br>Bag</li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+        <div style="padding: 2%;">
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img id="myimg" src="https://blog.myntra.com/wp-content/uploads/2024/04/Myntra-Trend-Index-Banner-image.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img id="myimg" src="https://blog.myntra.com/wp-content/uploads/2024/04/Myntra-Trend-Index-1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img id="myimg" src="https://blog.myntra.com/wp-content/uploads/2024/04/Myntra-Trend-Index-2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img id="myimg" src="https://blog.myntra.com/wp-content/uploads/2024/04/Myntra-Trend-Index-3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img id="myimg" src="https://blog.myntra.com/wp-content/uploads/2024/04/Myntra-Trend-Index-4.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev"  >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div id="bg2">
+          <div id="sp2">
+            <div class="card" style="width: 18rem;">
+              <img id="myimg2" src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/27869296/2024/2/26/6a14799a-6a91-4b09-ad54-3b69d738d8761708945236898ADByArvindMenSlimFitOpaqueCasualShirt1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Shirts</p>
+              </div>
+            </div>
+          </div>
+          <div id="sp2">
+            <div class="card" style="width: 18rem;">
+              <img id="myimg2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF0ugbkCDcivNDKHRvwoMGPoqj-R7d4sR7aQ&s" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Pants</p>
+              </div>
+            </div>
+          </div>
+          <div id="sp2">
+            <div class="card" style="width: 18rem;">
+              <img id="myimg2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScYUOy7g_7UAjbvXQWiANu05Kcsq_oerjFlQ&s" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">T-shirts</p>
+              </div>
+            </div>
+          </div>
+          <div id="sp2">
+            <div class="card" style="width: 18rem;">
+              <img id="myimg2" src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/12703738/2020/10/20/c1d625b3-1463-471e-b09c-da1eb24ebe3f1603135661554GiniandJonyGirlsWhiteRedPrintedRoundNeckT-shirtSweatersADAVG1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Trousers</p>
+              </div>
+            </div>
+          </div>
+          <div id="sp2">
+            <div class="card" style="width: 18rem;">
+              <img id="myimg2" src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/14068442/2021/4/12/de97a413-1ae1-465c-a211-c41c929618b51618209459889BABYGOUnisexKidsMulti1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">pagamas</p>
+              </div>
+            </div>
+          </div>
+          <div id="sp2">
+            <div class="card" style="width: 18rem;">
+              <img id="myimg2" src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/26517820/2024/2/19/89946781-bd6f-4c1e-a2ad-0e82151d299e1708328740112-ADIDAS-Men-Woven-Design-Adizero-SL-Running-Shoes-92117083287-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">shoes</p>
+              </div>
+            </div>
+          </div>
+          <div id="sp2">
+            <div class="card" style="width: 18rem;">
+              <img id="myimg2" src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/17702022/2022/4/1/350da4ea-b3fb-41f5-9cdc-197045b182771648796346908EternityCreamTexturedMetalwithCeramicElectricTableLamp1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Lamps</p>
+              </div>
+            </div>
+          </div>
+          <div id="sp2">
+            <div class="card" style="width: 18rem;">
+              <img id="myimg2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpxJMNgfqli3K6ijtHNxsIMXJlG2xRuQNdfA&s" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Curtains</p>
+              </div>
+            </div>
+          </div>
+          <div id="sp2">
+            <div class="card" style="width: 18rem;">
+              <img id="myimg2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq79yt9wPK68yZm1y7clec2WtNNuGiSdAeHw&s" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Cushions</p>
+              </div>
+            </div>
+          </div>
+          <div id="sp2">
+            <div class="card" style="width: 18rem;">
+              <img id="myimg2" src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/11450618/2022/10/29/9cb6b61f-a386-4693-90cd-733cca3c63e81667040356881-Just-Herbs-Aloe-Vera-Anti-Frizz--Hairfall-Control-Shampoo-Fo-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Haircare</p>
+              </div>
+            </div>
+          </div>
+          <div id="sp2">
+            <div class="card" style="width: 18rem;">
+              <img id="myimg2" src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/20575768/2024/4/24/9ac9646c-9f84-48cb-9c9b-e1c1c90c1a241713939924962-La-French-Mood-Swing-Eau-De-Parfum-100-ml-9681713939924647-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Fragrances</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="ft">
+          <hr>
+          <div style="display: -webkit-inline-flex;">
+            <ul>
+              <li style="font-size: 14px;"><b>Registered Office</b></li>
+              <li>Buildings Alyssa,</li>
+              <li>Begonia and Clover situated in Embassy Tech Village,</li>
+              <li>Outer Ring Road,</li>
+              <li>Devarabeesanahalli Village,</li>
+              <li>Varthur Hobli,</li>
+              <li>Bengaluru - 560103, India</li>
+            </ul>
+            <ul style="margin-top: 50px; margin-left: 50px;">
+              <li>CIN: U72300KA2007PTC041799</li>  
+              <li>Telephone: +91-80-61561999</li>
+            </ul>
+          </div>
+          <hr>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
